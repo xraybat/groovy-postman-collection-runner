@@ -99,7 +99,7 @@
 		{
 			"name": "constituent :: update :: csv",
 			"id": "1b6de7ef-1d80-d06b-9383-0d769b3b08b0",
-			"url": "http://mel-lei-bmc-dev.oxfam.org.au/CRMConnector/Service.svc/anon",
+			"url": "http://{{host}}/{{prefix}}Service.svc/anon",
 			"time": "558",
 			"responseCode": {
 				"code": 200,

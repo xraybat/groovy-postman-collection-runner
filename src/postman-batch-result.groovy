@@ -72,12 +72,14 @@ if (extraArguments) {
     assert allTests.size == json.count
 
     println "\nallTests\n========"
+    def i = 0
     for (test in allTests) {
         assert test instanceof Map
+        i++
         test.each { k, v ->
             if (allTests.size < 11) println "'${k}': ${v}"
             if (k.contains("critical ::") && !v)
-                assert false : "**** BIG PROBLEM: critical test ('${k}') failed! ****"
+                assert false : "**** BIG PROBLEM: critical test ('${k}') failed on record ${i}! ****"
         }
     } // for
 

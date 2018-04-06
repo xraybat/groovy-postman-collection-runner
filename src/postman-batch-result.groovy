@@ -77,7 +77,7 @@ if (extraArguments) {
         test.each { k, v ->
             if (allTests.size < 10) println "'${k}': ${v}"
             if (k.contains("critical ::") && !v)
-                assert false : "**** BIG PROBLEM: critical test failed! ****"
+                assert false : "**** BIG PROBLEM: critical test ('${k}') failed! ****"
         }
     } // for
 

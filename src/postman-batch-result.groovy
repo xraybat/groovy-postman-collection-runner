@@ -75,7 +75,7 @@ if (extraArguments) {
     for (test in allTests) {
         assert test instanceof Map
         test.each { k, v ->
-            if (allTests.size < 10) println "'${k}': ${v}"
+            if (allTests.size < 11) println "'${k}': ${v}"
             if (k.contains("critical ::") && !v)
                 assert false : "**** BIG PROBLEM: critical test ('${k}') failed! ****"
         }

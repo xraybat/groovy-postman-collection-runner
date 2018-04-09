@@ -48,3 +48,6 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+# this project's json test files
+src/*.json
